@@ -28,3 +28,15 @@ ul{
   gap:20px;
 }
 
+/* .country-info{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 40px;
+    align-items: center;
+   
+} */
+.container{
+  display: flex;
+  gap:20px;
+}
