@@ -25,10 +25,11 @@ if(countryName===""){
     .then(data=>{
         
         if(data.length>10){
-            listEl.innerHTML='';
+            listEl.innerHTML=''
             Notify.info("Too many matches found. Please enter a more specific name.");
         }
         if (data.length===1){
+            listEl.innerHTML=''
             containerEl.innerHTML=markupContainerEl(data);
             
 
@@ -37,7 +38,7 @@ if(countryName===""){
             containerEl.innerHTML='';
             
         }
-        if(data.length>=2 || data.length<10){
+        if(data.length>=2 && data.length<10 ){
             listEl.innerHTML=markupalist(data);
             
         }
